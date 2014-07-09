@@ -4,11 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>3D Grid Effect | Demo 1</title>
+		<title>Navigation</title>
 		<meta name="description" content="3D Grid Effect: Recreation of the effect seen in the prototype app by Marcus Eckert | Demo 1" />
 		<meta name="keywords" content="3d, grid, effect, flip, css transform, perspective, web design" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -17,37 +19,60 @@
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
+
+
+
+
 			<header class="codrops-header">
 				<h1>Angelique De Castro
           <span>Get to know me by clicking on any of the images!</span>
 			</header>
+
+
+
+
+
 			<section class="grid3d vertical" id="grid3d">
 				<div class="grid-wrap">
 					<div class="grid">
-						<figure><img src="img/1.jpg" alt="img01"/></figure>
-						<figure><img src="img/4.jpg" alt="img04"/></figure>
-						<figure><img src="img/7.jpg" alt="img07"/></figure>
+						<figure><img src="img/geisel.png" class="hover-caption" alt="img01"/>UCSD</figure>
+						<figure><img src="img/me.png" class="hover-caption" alt="img04"/>About Me</figure>
+						<figure><img src="img/code.png" class="hover-caption" alt="img07"/>Projects</figure>
 					</div>
 				</div><!-- /grid-wrap -->
+
+
+
+
+
 				<div class="content">
-					<div>
+					<div><!--UCSD-->
 						<div class="dummy-img"></div>
-						<div class="dummy-text"> <meta  content="0; url=http://angeliquedecastro.com/" /></div>
+						<p class="dummy-text">
+							Angelique De Castro<br/>
+							University of California, San Diego Class of 2016<br/>
+							Computer Science major<br/>
+							Literature/Writing minor<br/>
+						</p>
           </div>
-					<div>
+					<div><!--about-->
 						<div class="dummy-img"></div>
-						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
 						<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
 					</div>
-					<div>
-            <div>
-              <!--<meta http-equiv="refresh" content="0; url=https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfmsC6Z3bPbw44X0_FGQ0Gb_RhhE2a2I-Zsx2MSrQuxnnrmxPq2A" />-->
-            </div>
+					<div><!--projects-->
+						<div class="dummy-img"></div>
+						<img src="img/Octocat.png" class="octocat">
+						<span class="dummy-text"><a href="https://github.com/ifearcompilererrors">
+							<i>Github</i>
+						</a></span>
 					</div>
 					<span class="loading"></span>
 					<span class="icon close-content"></span>
 				</div>
 			</section>
+
+
+
 
 			<section class="related">
 				<p>Stay updated:</p>
@@ -56,16 +81,33 @@
 					<h3>Unreliable Narrations</h3>
 				</a>
 				<a href="http://www.linkedin.com/pub/angelique-de-castro/59/764/9ab/">
-					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/07/GridLoadingEffects-300x162.png" />
+					<img src="img/linkedin.png" />
 					<h3>LinkedIn Profile</h3>
+				</a>
+				<a href="https://vimeo.com/user2330136">
+					<img src="img/vimeo.png">
+					<h3>Vimeo</h3>
 				</a>
 			</section>
 		</div><!-- /container -->
+
+
+		<div class="row" style="color:white;">
+			<div class="footer">
+				Copyright &copy; Angelique De Castro 2014 &nbsp;
+			</div>
+		</div>
+
+
 		<script src="js/classie.js"></script>
 		<script src="js/helper.js"></script>
 		<script src="js/grid3d.js"></script>
 		<script>
 			new grid3D( document.getElementById( 'grid3d' ) );
 		</script>
+
+
+
+
 	</body>
 </html>
