@@ -1,32 +1,33 @@
 body
 {
   /*font-family: 'Cantarell', sans-serif;*/
+  background:black;
 }
 
 .banner
 {
-  background-color:#1abc9c;
-  font-family:'Lobster', cursive;
-  text-align: center;
-  padding: 1em 0em 1em 0em;
-  font-size: 3em;
-  color:black;
+  position:absolute;
 }
 
 .welcome
 {
 
-  background-image: url("https://31.media.tumblr.com/38316ac7853ccf7e422d5e00f543c695/tumblr_n73cgbaiGZ1shfjrho1_500.jpg");
+  /*background-image: url("https://31.media.tumblr.com/38316ac7853ccf7e422d5e00f543c695/tumblr_n73cgbaiGZ1shfjrho1_500.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: 100%;*/
   color: white;
   font-family: 'Lobster', cursive;
-  font-size:7em;
+  font-size:5em;
   text-align: center;
-  padding: 4em 0em 4em 0em;
-  margin-top:-1.7em;
 }
+
+/*.bigme
+{
+  width:100%;
+  height:100%;
+  z-index:-1;
+}*/
 
 .circles
 {
@@ -42,10 +43,110 @@ body
 {
   color:white;
   text-decoration:none;
-  font-size: .35em;
+  font-size: 2em;
   font-family:'Open Sans';
-  padding:.2em;
-  border: solid 4px;
+  border: solid 1px;
+  padding:.5em 0em .5em 0em;
+  background-color:black;
+}
+
+.font-1
+{
+  font-size:1em;
+}
+
+.font-2
+{
+  font-size:2em;
+}
+
+.font-3
+{
+  font-size:3em;
+}
+
+.font-4
+{
+  font-size:4em;
+}
+
+.font-5
+{
+  font-size:5em;
+}
+
+.font-6
+{
+  font-size:6em;
+}
+
+.font-7
+{
+  font-size:7em;
+}
+
+.font-weight-eighth
+{
+  font-weight:.2em;
+}
+
+.font-weight-half
+{
+  font-weight:.5em;
+}
+
+.font-weight-1
+{
+  font-weight:1em;
+}
+
+.font-weight-2
+{
+  font-weight:2em;
+}
+
+.font-weight-3
+{
+  font-weight:3em;
+}
+
+.font-weight-4
+{
+  font-weight:4em;
+}
+
+.font-weight-5
+{
+  font-weight:5em;
+}
+
+.down
+{
+  color:white;
+  text-decoration:none;
+}
+
+a:hover
+{
+  text-decoration:none;
+}
+
+.about-separator
+{
+  color:gray;
+  border-bottom:solid .5em;
+  margin:0em 0em 4em 1em;
+}
+
+.section-about
+{
+  background:white;
+  margin:auto;
+}
+
+.section-footer
+{
+  color:gray;
 }
 
 .facebook
