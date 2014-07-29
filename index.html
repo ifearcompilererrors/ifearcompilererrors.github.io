@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/fonts/">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel='icon' href='img/a.png'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lobster|Cantarell|Playfair+Display+SC' rel='stylesheet' type='text/css'>
@@ -61,7 +62,7 @@
 
       <div class='row'>
         <div class='col-lg-12 col-md-12 col-sm-12'>
-          <div style='font-size:1.5em;'>
+          <div class='lead'>
             "Sometimes you get a flash of what you look like to other people" - Zadie Smith, <i style='color:gray;'>On Beauty</i>
           </div>
         </div>
@@ -72,7 +73,9 @@
       <div class='row'>
 
         <div class='col-lg-6 col-md-6 col-sm-12'>
-          <img src='img/about.png' class='img-responsive' Alt='Responsive image'>
+          <a href='http://m43format.tumblr.com'>
+            <img title='&copy;2014 Brian Tran' src='img/about.png' class='img-responsive' Alt='Responsive image'>
+          </a>
         </div>
         <div class='col-lg-6 col-md-6 col-sm-12'>
 
@@ -125,6 +128,28 @@
   </div> <!--section timeline-->
 
   <div class='section-contact'>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 block-center'>
+          <section id='contact' data-type='background' data-speed='10' class='pages'>
+            <article>
+              <h1>Contact</h1>
+              <div class='col-md-3 col-md-3 social lead'>Github<br/>
+                <a href='http://github.com/ifearcompilererrors'><img src='img/Octocat.png' style='max-height:3.7em;'></a>
+              </div>
+              <div class='col-md-3 col-md-3 social lead'>LinkedIn<br/>
+                <a href='https://www.linkedin.com/pub/angelique-de-castro/59/764/9ab'><img src='img/linkedini.png'></a>
+              </div>
+              <div class='col-md-3 col-md-3 social lead'>Gmail/G+<br/>
+                <a href='https://plus.google.com/117674201585804990479/about'><img src='img/gmaili.png'></a>
+              </div>
+              <div class='col-md-3 col-md-3 social lead'>Blog<br/>
+                <a href='http://unreliable-narrations.tumblr.com'><img src='img/tumbli.png'></a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+
   </div> <!--section contact-->
 
   <div class='section-footer'>
@@ -132,7 +157,8 @@
       <div class='col-lg-3 col-md-3'>
       </div>
       <div class='col-lg-6 col-md-6 col-sm-12 text-center' align='center' style='margin:auto;'>
-        &copy;2014 made by Angelique De Castro inspired by <a href='http://themeforest.net/user/metrothemes/portfolio'>metrothemes</a> with help from <a href='http://codrops.com'>codrops</a></div>
+        <br/><br/>
+        &copy;2014 made by Angelique De Castro inspired by <a href='http://themeforest.net/user/metrothemes/portfolio'>metrothemes</a> with help from <a href='http://codrops.com'>codrops</a> and <a href='http://tutsplus.com/'>tuts+</a></div>
       </div>
       <div class='col-lg-3 col-md-3'>
       </div>
@@ -141,5 +167,23 @@
     <br/></br/>
 
   </div>
+
+<script type='text/javascript'>
+  $(document).ready(function()
+  {
+    var $window = $(window);
+
+    $('section[data-type="background"]').each(function()
+    {
+      var $bgobj = $(this);
+      $(window).scroll(function()
+      {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+        var coords = '50%' + yPos + 'px';
+        $bgobj.css({ backgroundPosition:coords });
+      });
+    });
+  });
+</script>
 
 </body>

@@ -22,13 +22,6 @@ body
   text-align: center;
 }
 
-/*.bigme
-{
-  width:100%;
-  height:100%;
-  z-index:-1;
-}*/
-
 .circles
 {
   color:white;
@@ -130,6 +123,32 @@ a:hover
   text-decoration:none;
 }
 
+#contact
+{
+  background: url(http://static.tutsplus.com/assets/home/header-background-60d6ad1618766ebcea0f869dad35b56e.png) 100% 0 repeat fixed; max-height:30em;
+  height:1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba( 0, 0, 0, 0.8);
+  box-shadow: 0 0 50px rgba( 0,0,0,0.8);
+}
+
+#contact article
+{
+  height: 458px;
+  position: absolute;
+  text-align:center;
+  top:4em;
+  width:100%;
+}
+
+.social
+{
+  top:2em;
+}
+
 .about-separator
 {
   color:gray;
@@ -146,6 +165,11 @@ a:hover
 .section-timeline
 {
 
+}
+
+.section-contact
+{
+  background:gray;
 }
 
 .section-footer
