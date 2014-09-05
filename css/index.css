@@ -12,15 +12,33 @@ body
 .welcome
 {
 
-  /*background-image: url("https://31.media.tumblr.com/38316ac7853ccf7e422d5e00f543c695/tumblr_n73cgbaiGZ1shfjrho1_500.jpg");
+  /*background-image: url(workspace.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;*/
+  background-size: 130%;*/
+
+  position:relative;
+
+}
+
+.welcome-text
+{
   color: white;
   font-family: 'Lobster', cursive;
   font-size:5em;
+  position:absolute;
   text-align: center;
 }
+
+img.blur
+ {
+    max-height:43em;
+   -webkit-filter: blur(3px);
+   -moz-filter: blur(3px);
+   -o-filter: blur(3px);
+   -ms-filter: blur(3px);
+   filter: blur(3px);
+  }
 
 .circles
 {
