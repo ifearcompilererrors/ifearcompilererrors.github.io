@@ -4,50 +4,29 @@ body
   background:black;
 }
 
-.banner
-{
-  position:absolute;
-}
-
-.welcome
-{
-
-  /*background-image: url(workspace.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 130%;*/
-
-  position:relative;
-
+.banner{
+  /*background-color:#347b28;*/
+  background:url('./../img/banner.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size:7em;
+  padding-bottom:1em;
+  color:#fff;
 }
 
 .welcome-text
 {
-  color: white;
-  font-family: 'Lobster', cursive;
-  font-size:5em;
-  position:absolute;
-  text-align: center;
+  padding-top:1em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-img.blur
- {
-    max-height:43em;
-   -webkit-filter: blur(3px);
-   -moz-filter: blur(3px);
-   -o-filter: blur(3px);
-   -ms-filter: blur(3px);
-   filter: blur(3px);
-  }
 
 .circles
 {
-  color:white;
-  font-size: .4em;
   border-radius:100%;
-  text-decoration:none;
-  padding: 0em .5em 0em .5em;
-  border: solid 4px;
+  max-width:4em;
+  max-height:4em;
 }
 
 .squares
@@ -143,7 +122,7 @@ a:hover
 
 #contact
 {
-  background: url(http://static.tutsplus.com/assets/home/header-background-60d6ad1618766ebcea0f869dad35b56e.png) 100% 0 repeat fixed; max-height:30em;
+  background: url(./../img/contact.png) 100% 0 repeat fixed; max-height:30em;
   height:1000px;
   margin: 0 auto;
   width: 100%;
@@ -165,6 +144,11 @@ a:hover
 .social
 {
   top:2em;
+}
+
+.challengepost
+{
+  max-width:4em;
 }
 
 .about-separator
