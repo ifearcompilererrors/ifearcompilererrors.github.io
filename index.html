@@ -1,17 +1,22 @@
-{% load static %}
+<!--{% load static %}-->
 
 <!DOCTYPE html>
   <head>
-    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.min.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/index.css' %}">
-    <link rel='icon' href="{% static 'home/img/a.png' %}">
-
+    <link rel='icon' href="{% static 'home/img/a.png' %}">-->
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <link rel='icon' href="static/img/a.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="{% static 'home/jquery/jquery-ui-1.11.2/external/jquery/jquery.js' %}"></script>
+    <!--<script type="text/javascript" src="{% static 'home/jquery/jquery-ui-1.11.2/external/jquery/jquery.js' %}"></script>
     <script src="{% static 'home/jquery/jquery-ui-1.11.2/jquery-ui.min.js' %}" type='text/javascript'></script>
-    <script src="{% static 'home/jquery/index.js' %}" type='text/javascript'></script>
+    <script src="{% static 'home/jquery/index.js' %}" type='text/javascript'></script>-->
+    <script type="text/javascript" src="static/jquery/jquery-ui-1.11.2/external/jquery/jquery.js"></script>
+    <script src="static/jquery/jquery-ui-1.11.2/jquery-ui.min.js" type='text/javascript'></script>
+    <script src="static/jquery/index.js" type='text/javascript'></script>
 
     <link href='http://fonts.googleapis.com/css?family=Lobster|Cantarell|Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -31,7 +36,7 @@
   <div class='row'>
     <div class='banner col-lg-12 col-md-12 col-sm-12'>
       <p class='text-center welcome-text'><i>Welcome</i></p>
-      <img src="{% static 'home/img/meicon.png'%}"class='center-block img-circle'>
+      <img src='static/img/meicon.png' class='center-block img-circle'>
     </div>
   </div>
 
@@ -81,7 +86,7 @@
 
         <div class='col-lg-6 col-md-12 col-sm-12'>
           <a href='http://m43format.tumblr.com'>
-            <img title='&copy;2014 Brian Tran' src="{% static 'home/img/about.png' %}" class='img-responsive' Alt='Responsive image'>
+            <img title='&copy;2014 Brian Tran' src='static/img/about.png' class='img-responsive' Alt='Responsive image'>
           </a>
         </div>
         <div class='col-lg-6 col-md-12 col-sm-12'>
@@ -142,16 +147,16 @@
             <article>
               <h1>Contact</h1>
               <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Github<br/>
-                <a href='http://github.com/ifearcompilererrors'><img src="{% static 'home/img/Octocat.png' %}" style='max-height:3.7em;'></a>
+                <a href='http://github.com/ifearcompilererrors'><img src='static/img/Octocat.png' style='max-height:3.7em;'></a>
               </div>
               <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>LinkedIn<br/>
-                <a href='https://www.linkedin.com/pub/angelique-de-castro/59/764/9ab'><img src="{% static 'home/img/linkedini.png' %}"></a>
+                <a href='https://www.linkedin.com/pub/angelique-de-castro/59/764/9ab'><img src='static/img/linkedini.png'></a>
               </div>
               <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Gmail/G+<br/>
-                <a href='https://plus.google.com/117674201585804990479/about'><img src="{% static 'home/img/gmaili.png' %}"></a>
+                <a href='https://plus.google.com/117674201585804990479/about'><img src='static/img/gmaili.png'></a>
               </div>
               <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Hacks<br/>
-                <a href='http://challengepost.com/users/angeliquedecastro?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav'><img src="{% static 'home/img/challengepost.png' %}" class='challengepost'></a>
+                <a href='http://challengepost.com/users/angeliquedecastro?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav'><img src='static/img/challengepost.png' class='challengepost'></a>
               </div>
             </article>
           </section>
