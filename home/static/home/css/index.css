@@ -1,3 +1,5 @@
+{% load static %}
+
 body
 {
   /*font-family: 'Cantarell', sans-serif;*/
