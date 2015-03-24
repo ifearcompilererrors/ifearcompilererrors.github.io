@@ -13,5 +13,5 @@ urlpatterns = patterns('',
     # url(r'^$', 'ifearcompilererrors.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', views.index, name='home'),
-    url(r'^admin/', include(admin.site.urls)),
+    #url(r'^admin/', include(admin.site.urls)),
 )+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
