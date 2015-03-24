@@ -13,7 +13,7 @@ from django.conf import global_settings
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,'home/templates/home'),
+    os.path.join(BASE_DIR,'.'),
 )
 
 MEDIA_ROOT = (os.path.join(os.path.dirname(__file__), '../home/static/home/img'))

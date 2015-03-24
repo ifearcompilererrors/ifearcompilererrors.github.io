@@ -13,7 +13,7 @@ import os,sys
 
 # Create your views here.
 def index(request):
-	template_name = "home/index.html"
+	template_name = "index.html"
 	context_object_name = 'home'
 
 	template = loader.get_template(template_name)
