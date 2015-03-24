@@ -29,6 +29,14 @@ body
   max-height:4em;
 }
 
+.anchorLink{
+  cursor:pointer;
+}
+
+.hide-me{
+  opacity:0;
+}
+
 .squares
 {
   color:white;
