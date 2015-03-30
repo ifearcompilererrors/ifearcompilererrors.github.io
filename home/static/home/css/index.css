@@ -24,6 +24,20 @@ body
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#sky{
+  background-color:#000;
+  min-height:80vh;
+  max-height:80vh;
+  position:relative;
+  margin:0 auto;
+}
+
+.star{
+  background-color:#fff;
+  border-radius:100%;
+  border-color:#fff;
+}
+
 .circles
 {
   border-radius:100%;
@@ -33,6 +47,7 @@ body
 
 .anchorLink{
   cursor:pointer;
+  min-height:20vh;
 }
 
 .hide-me{
