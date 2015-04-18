@@ -8,6 +8,7 @@ var leftRightStars = 20; /* number of left and right stars */
 var left = 100; /* justify position */
 var right = 1000; /* justify position */
 
+/* generate stars */
 for(var i = 0; i < midStars; ++i)
 {
     $("#sky").append("<span class='star' style='position:absolute;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
@@ -33,6 +34,7 @@ for(var i = 0; i < twinkleStarsMid; ++i)
     $("#sky").append("<span class='star twinkle2' style='position:absolute;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
 }
 
+/* make 'em shine */
 function twinkle1(){
     var $star = $(".twinkle1");
     $star.delay((Math.random()*100)+1200);
@@ -52,15 +54,14 @@ function twinkle2(){
 twinkle1();
 twinkle2();
 
-$(".welcome-text").fadeIn(20000);
+$(".welcome-text").fadeIn(2000);
 
 /* animate scroll to about section */
 $('.anchorLink').click(function(){
     $('html, body').animate({
-        scrollTop: "830vh"
+        scrollTop: "835vh"
     }, 800);
 });
-
 
 /* contact section motion parallax */
 var $window = $(window);
