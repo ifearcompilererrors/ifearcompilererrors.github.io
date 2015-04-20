@@ -4,6 +4,7 @@ body
 {
   /*font-family: 'Cantarell', sans-serif;*/
   background:black;
+  overflow-x:hidden;
 }
 
 .banner{
@@ -31,6 +32,7 @@ body
   max-height:80vh;
   position:relative;
   margin:0 auto;
+  overflow-x:visible;
 }
 
 .star{
@@ -55,6 +57,14 @@ body
 
 .hide-me{
   opacity:0;
+}
+
+#about{
+  margin-top:15vh;
+}
+
+#quote{
+  margin-bottom:5vh;
 }
 
 .squares

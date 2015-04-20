@@ -11,27 +11,27 @@ var right = 1000; /* justify position */
 /* generate stars */
 for(var i = 0; i < midStars; ++i)
 {
-    $("#sky").append("<span class='star' style='position:absolute;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
+    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
 }
 
 for(var i = 0; i < leftRightStars; ++i)
 {
-    $("#sky").append("<span class='star' style='position:absolute;top:"+(Math.random()*left*10)+"px;left:"+(Math.random()*left)+"px;'></span>");
+    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*left*10)+"px;left:"+(Math.random()*left)+"px;'></span>");
 }
 
 for(var i = 0; i < leftRightStars; ++i)
 {
-    $("#sky").append("<span class='star' style='position:absolute;top:"+(Math.random()*right)+"px;left:"+(Math.random()*right+250)+"px;'></span>");
+    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*right)+"px;left:"+(Math.random()*right+250)+"px;'></span>");
 }
 
 for(var i = 0; i < twinkleStarsMid; ++i)
 {
-    $("#sky").append("<span class='star twinkle1' style='position:absolute;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
+    $("#sky").append("<span class='star twinkle1' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
 }
 
 for(var i = 0; i < twinkleStarsMid; ++i)
 {
-    $("#sky").append("<span class='star twinkle2' style='position:absolute;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
+    $("#sky").append("<span class='star twinkle2' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
 }
 
 /* make 'em shine */
@@ -59,7 +59,7 @@ $(".welcome-text").fadeIn(2000);
 /* animate scroll to about section */
 $('.anchorLink').click(function(){
     $('html, body').animate({
-        scrollTop: "835vh"
+        scrollTop: "820vh"
     }, 800);
 });
 
