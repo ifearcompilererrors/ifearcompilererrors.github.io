@@ -16,6 +16,7 @@
     <script src="{% static 'home/jquery/index.js' %}" type='text/javascript'></script>-->
     <script type="text/javascript" src="static/jquery/jquery-ui-1.11.2/external/jquery/jquery.js"></script>
     <script src="static/jquery/jquery-ui-1.11.2/jquery-ui.min.js" type='text/javascript'></script>
+    <script src="static/d3/d3.min.js" charset="utf-8"></script>
     <script src="static/jquery/index.js" type='text/javascript'></script>
     <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
 
@@ -23,54 +24,31 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-62116279-1', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-62116279-1', 'auto');
+      ga('send', 'pageview');
 
-</script>
+    </script>
 
     <title>ngelique De Castro | Welcome!</title>
   </head>
+
 <body>
+  
+  <h1 class='welcome-text' align="center"><i><img src="static/img/astro_me.png">Welcome</i></h1>
+  <span class='anchorLink'><i class='glyphicon glyphicon-chevron-down'></i></span>
 
-  <!--<div class='row'>
-    <div>
-
-      <div class='col-lg-12 col-md-12 col-sm-12'>
-        <span class='welcome center-text center-block'>Welcome!</span>
-      </div>
-
-    </div>-->
-
-  <div id='sky' class="row">
-      <h1 class='col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center welcome-text'><i><img src="static/img/astro_me.png">Welcome</i></h1>
-  </div>
-
-  <div class='row anchorLink'>
-    <div>
-      <div class='col-lg-5 col-md-5'></div>
-      <div class='col-lg-2 col-md-2 col-sm-12'>
-        <span class='squares center-block ' align='center'>
-          <span class='glyphicon glyphicon-chevron-down center-block'></span>
-        </span>
-      </div>
-      <div class='col-lg-5 col-md-5'></div>
-    </div>
-  </div>
-
-  <br/><br/></br/>
+  <svg class="sky"></svg>
 
   <div class='section-about hide-me'>
-
-    <div class='container'>
-
+    <div class="container">
       <div id='about' class='row'>
         <div class='col-lg-5 col-md-12 col-sm-12 center-text'>
-          <b class='font-5'>ABOUT ME</b>
+          <b style='font-size:5em'>ABOUT ME</b>
         </div>
       </div>
 
@@ -96,7 +74,7 @@
         </div>
         <div class='col-lg-6 col-md-12 col-sm-12'>
 
-          <b class='font-4'>Angelique De Castro</b>
+          <b style="font-size:4em;">Angelique De Castro</b>
           <p><i><h4>Student. Tutor. Developer. California based.</h4></i></p>
 
           <div class='pre-scrollable' style='max-height:250px;'>
@@ -133,13 +111,9 @@
 
       </div>
 
-      <br/></br/><br/></br/>
-
-    </div><!--container-->
-
+      </div><!--container-->
   </div><!--section about-->
 
-  <br/></br/>
 
   <div class='section-timeline'>
 
@@ -174,7 +148,7 @@
 
   <div class='row'>
     <div class='col-lg-12 col-md-12 col-sm-12 text-center'>
-    <p class='bg-info font-5'>More coming soon...</p>
+    <p class='bg-info' style="font-size:5em;">More coming soon...</p>
     </div>
   </div>
 
@@ -190,9 +164,6 @@
       <div class='col-lg-3 col-md-3'>
       </div>
     </div>
-
-    <br/></br/>
-
   </div><!--section footer-->
 
 

@@ -1,41 +1,30 @@
 $(document).ready(function(){
 
-var midStars = 60; /* number of untwinkling stars in middle */
-var twinkleStarsMid = 25; /* number of twinkling stars */
-var mid = 1000; /* justify position */
-
-var leftRightStars = 20; /* number of left and right stars */
-var left = 100; /* justify position */
-var right = 1000; /* justify position */
-
-/* generate stars */
-for(var i = 0; i < midStars; ++i)
+for(var i = 0; i < 100; ++i)
 {
-    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
+    var cx = Math.floor(Math.random()*100);
+    var cy = Math.floor(Math.random()*100);
+    d3.select("svg.sky")
+        .append("circle")
+        .attr("r", 1)
+        .attr("cx", cx+"%")
+        .attr("cy", cy+"%")
+        .attr("fill", "white");
 }
 
-for(var i = 0; i < leftRightStars; ++i)
-{
-    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*left*10)+"px;left:"+(Math.random()*left)+"px;'></span>");
+function crandom(array){
+    var len = array.length;
+    var i = Math.floor(Math.random())*100;
+    return "nth-child:("+i+")"
 }
 
-for(var i = 0; i < leftRightStars; ++i)
-{
-    $("#sky").append("<span class='star' style='position:fixed;top:"+(Math.random()*right)+"px;left:"+(Math.random()*right+250)+"px;'></span>");
+function twinkle(array){
+
 }
 
-for(var i = 0; i < twinkleStarsMid; ++i)
-{
-    $("#sky").append("<span class='star twinkle1' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
-}
-
-for(var i = 0; i < twinkleStarsMid; ++i)
-{
-    $("#sky").append("<span class='star twinkle2' style='position:fixed;top:"+(Math.random()*mid)+"px;left:"+(Math.random()*mid+100)+"px;'></span>");
-}
 
 /* make 'em shine */
-function twinkle1(){
+function twinkle(array){
     var $star = $(".twinkle1");
     $star.delay((Math.random()*100)+1200);
     $star.animate({opacity:'+=1'}, 100);
@@ -43,6 +32,7 @@ function twinkle1(){
     $star.animate({opacity:'-=0.5'}, 100, twinkle1);
 }
 
+/*
 function twinkle2(){
     var $star = $(".twinkle2");
     $star.delay((Math.random()*500)+200);
@@ -52,14 +42,14 @@ function twinkle2(){
 }
 
 twinkle1();
-twinkle2();
+twinkle2();*/
 
 $(".welcome-text").fadeIn(2000);
 
 /* animate scroll to about section */
 $('.anchorLink').click(function(){
     $('html, body').animate({
-        scrollTop: "820vh"
+        scrollTop: "800%"
     }, 800);
 });
 

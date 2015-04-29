@@ -1,5 +1,4 @@
 {% load static %}
-
 body
 {
   /*font-family: 'Cantarell', sans-serif;*/
@@ -7,16 +6,12 @@ body
   overflow-x:hidden;
 }
 
-.banner{
-  /*background-color:#347b28;*/
-  background:url('./../img/banner.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-size:7em;
-  padding-bottom:1em;
-  color:#fff;
+.sky{
+  position:fixed; 
+  top:0; left:0; bottom:0;
+  height:100%; width:100%;
+  background-color:black;
+  z-index:-9;
 }
 
 .welcome-text
@@ -26,33 +21,21 @@ body
   color:#fff;
 }
 
-#sky{
-  background-color:#000;
-  min-height:80vh;
-  max-height:80vh;
-  position:relative;
-  margin:0 auto;
-  overflow-x:visible;
-}
-
-.star{
-  background-color:#fff;
-  border-color:#fff;
-  border-radius:100%;
-  height:1px;
-  width:1px;
-}
-
-.circles
-{
-  border-radius:100%;
-  max-width:4em;
-  max-height:4em;
-}
-
 .anchorLink{
   cursor:pointer;
-  min-height:20vh;
+  color:white;
+  font-size:3em;
+  margin-left:50%;
+}
+
+.glyphicon-chevron-down{
+  position:relative;
+  -webkit-animation: anchorLink 1.5s linear infinite alternate;
+}
+
+@-webkit-keyframes anchorLink{
+  0%{top:0;}
+  100%{top:10px;}
 }
 
 .hide-me{
@@ -60,96 +43,11 @@ body
 }
 
 #about{
-  margin-top:15vh;
+  margin-top:10vh;
 }
 
 #quote{
   margin-bottom:5vh;
-}
-
-.squares
-{
-  color:white;
-  text-decoration:none;
-  font-size: 3em;
-  font-family:'Open Sans';
-  padding:.5em 0em .5em 0em;
-}
-
-.font-1
-{
-  font-size:1em;
-}
-
-.font-2
-{
-  font-size:2em;
-}
-
-.font-3
-{
-  font-size:3em;
-}
-
-.font-4
-{
-  font-size:4em;
-}
-
-.font-5
-{
-  font-size:5em;
-}
-
-.font-6
-{
-  font-size:6em;
-}
-
-.font-7
-{
-  font-size:7em;
-}
-
-.font-weight-eighth
-{
-  font-weight:.2em;
-}
-
-.font-weight-half
-{
-  font-weight:.5em;
-}
-
-.font-weight-1
-{
-  font-weight:1em;
-}
-
-.font-weight-2
-{
-  font-weight:2em;
-}
-
-.font-weight-3
-{
-  font-weight:3em;
-}
-
-.font-weight-4
-{
-  font-weight:4em;
-}
-
-.font-weight-5
-{
-  font-weight:5em;
-}
-
-.down
-{
-  color:white;
-  text-decoration:none;
 }
 
 a:hover
@@ -197,31 +95,22 @@ a:hover
 
 .section-about
 {
-  background:white;
-  margin:auto;
-}
-
-.section-timeline
-{
-
+  color:black; 
+  top:0; left:0; 
+  height:100%; width:100%;
+  background-color:white;
+  margin-top:20%;
+  padding-bottom:5%;
 }
 
 .section-contact
 {
+  margin-top:2%;
   background:gray;
 }
 
 .section-footer
 {
   color:gray;
-}
-
-.facebook
-{
-  background-color:#3B5998;
-}
-
-.tumblr
-{
-  background-color:#2c4762;
+  margin-bottom:2%;
 }
