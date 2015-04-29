@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-for(var i = 0; i < 100; ++i)
+for(var i = 0; i < 30; ++i)
 {
     var cx = Math.floor(Math.random()*100);
     var cy = Math.floor(Math.random()*100);
@@ -9,22 +9,56 @@ for(var i = 0; i < 100; ++i)
         .attr("r", 1)
         .attr("cx", cx+"%")
         .attr("cy", cy+"%")
-        .attr("fill", "white");
+        .attr("fill", "white")
+        .attr("class", "twinkle1");
 }
 
-function crandom(array){
-    var len = array.length;
-    var i = Math.floor(Math.random())*100;
-    return "nth-child:("+i+")"
+for(var i = 0; i < 40; ++i)
+{
+    var cx = Math.floor(Math.random()*100);
+    var cy = Math.floor(Math.random()*100);
+    d3.select("svg.sky")
+        .append("circle")
+        .attr("r", 1)
+        .attr("cx", cx+"%")
+        .attr("cy", cy+"%")
+        .attr("fill", "white")
 }
 
-function twinkle(array){
-
+for(var i = 0; i < 30; ++i)
+{
+    var cx = Math.floor(Math.random()*100);
+    var cy = Math.floor(Math.random()*100);
+    d3.select("svg.sky")
+        .append("circle")
+        .attr("r", 1)
+        .attr("cx", cx+"%")
+        .attr("cy", cy+"%")
+        .attr("fill", "white")
+        .attr("class", "twinkle2");
 }
 
+/*console.log($("circle").length);
+
+function twinkle(){
+    var c = $("circle");
+    while(c){
+        var i = Math.floor(Math.random())*c.length;
+        var star = c.eq(i);
+
+        star.delay((Math.random()*100)+1200);
+        star.animate({opacity:'+=1'}, 100);
+        star.animate({opacity:'=1'}, 100);
+        star.animate({opacity:'-=0.5'}, 100);
+
+        c.splice(i,1);
+    }
+}
+
+twinkle();*/
 
 /* make 'em shine */
-function twinkle(array){
+function twinkle1(){
     var $star = $(".twinkle1");
     $star.delay((Math.random()*100)+1200);
     $star.animate({opacity:'+=1'}, 100);
@@ -32,17 +66,16 @@ function twinkle(array){
     $star.animate({opacity:'-=0.5'}, 100, twinkle1);
 }
 
-/*
 function twinkle2(){
     var $star = $(".twinkle2");
     $star.delay((Math.random()*500)+200);
     $star.animate({opacity:'+=1'}, 100);
     $star.animate({opacity:'=1'}, 100);
-    $star.animate({opacity:'-=0.5'}, 100, twinkle2);
+    $star.animate({opacity:'-=0.3'}, 100, twinkle2);
 }
 
 twinkle1();
-twinkle2();*/
+twinkle2();
 
 $(".welcome-text").fadeIn(2000);
 
