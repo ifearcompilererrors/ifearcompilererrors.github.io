@@ -1,170 +1,59 @@
-<!--{% load static %}-->
-
 <!DOCTYPE html>
-  <head>
-    <!--<link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'home/css/index.css' %}">
-    <link rel='icon' href="{% static 'home/img/a.png' %}">-->
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/index.css">
-    <link rel='icon' href="static/img/a.png">
+<html lang="en">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--<script type="text/javascript" src="{% static 'home/jquery/jquery-ui-1.11.2/external/jquery/jquery.js' %}"></script>
-    <script src="{% static 'home/jquery/jquery-ui-1.11.2/jquery-ui.min.js' %}" type='text/javascript'></script>
-    <script src="{% static 'home/jquery/index.js' %}" type='text/javascript'></script>-->
-    <script type="text/javascript" src="static/jquery/jquery-ui-1.11.2/external/jquery/jquery.js"></script>
-    <script src="static/jquery/jquery-ui-1.11.2/jquery-ui.min.js" type='text/javascript'></script>
-    <script src="static/d3/d3.min.js" charset="utf-8"></script>
-    <script src="static/jquery/index.js" type='text/javascript'></script>
-    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+  <title>Angelique De Castro | Hello World</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Lobster|Cantarell|Playfair+Display+SC' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-62116279-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    <title>ngelique De Castro | Welcome!</title>
-  </head>
+  <link rel="stylesheet" href="/style.css" />
+</head>
 
 <body>
-  
-  <h1 class='welcome-text' align="center"><i><img src="static/img/astro_me.png">Welcome</i></h1>
-  <span class='anchorLink'><i class='glyphicon glyphicon-chevron-down'></i></span>
-
-  <svg class="sky"></svg>
-
-  <div class='section-about hide-me'>
-    <div class="container">
-      <div id='about' class='row'>
-        <div class='col-lg-5 col-md-12 col-sm-12 center-text'>
-          <b style='font-size:5em'>ABOUT ME</b>
-        </div>
-      </div>
-
-      <div class='row'>
-        <div class='col-lg-1 col-md-2 col-sm-12 about-separator'>
-        </div>
-      </div>
-
-      <div id="quote" class='row'>
-        <div class='col-lg-12 col-md-12 col-sm-12'>
-          <div class='lead'>
-            "Sometimes you get a flash of what you look like to other people" - Zadie Smith, <i style='color:gray;'>On Beauty</i>
-          </div>
-        </div>
-      </div>
-
-      <div class='row'>
-
-        <div class='col-lg-6 col-md-12 col-sm-12'>
-          <a href='http://m43format.tumblr.com'>
-            <img title='&copy;2014 Brian Tran' src='static/img/about.png' class='img-responsive' Alt='Responsive image'>
+  <section>
+    <h1>
+      Angelique De Castro
+    </h1>
+    <p>
+      Welcome. I am an artistic technologist exploring the intersections and
+      impact of code and culture. I'm a front-end developer at The New York Times
+      where I work on reader and editorial facing products that help readers
+      dive deep and understand the news.
+    </p>
+  </section>
+  <p class="glitch">
+    <span aria-hidden="true">BRB</span>
+    BRB
+    <span aria-hidden="true">BRB</span>
+  </p>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <a href="//www.tiktok.com/@neuegratis" target="_blank" title="GitHub">tiktok
           </a>
-        </div>
-        <div class='col-lg-6 col-md-12 col-sm-12'>
-
-          <b style="font-size:4em;">Angelique De Castro</b>
-          <p><i><h4>Location: San Francisco Bay Area, California, USA</h4></i></p>
-
-          <div class='pre-scrollable' style='max-height:250px;'>
-            <p>
-            Software Engineer @ Cisco, Civic Tech hacker, and aspiring Data Scientist.
-            </p>
-
-            <p>
-            UC San Diego Computer Science and Engineering alumna with an interest in innovating social good with technology. 
-            </p>
-
-            <p>
-            By day, I work on SP router software at Cisco in the Core Software Group, coding in C and Python. In my spare time, I volunteer for <a href="http://codeforsanjose.com/">Code for San Jose</a>. Come help us with projects I'm involved in like <a href="https://github.com/codeforsanjose/neighborhood-association/">Neighborhood Association</a> and <a href="https://github.com/codeforsanjose/findahome">Find a Home</a>, or come say hi and grab a slice &#127829;.
-            </p>
-
-            <p>
-            On the side, I co-create art with code for an online art gallery (still in development). Check out a piece I've done <a href="https://codepen.io/ifearcompilererrors/pen/NjZRVE">here</a>.
-            </p>
-
-            <p>
-            I've previously worked with the <a href='https://learningequality.org/about/'>Foundation for Learning Equality</a> as an intern.
-            I learned Python and Django to create an internal application with several other interns that would facilitate better communication amongst the members of the organization. From there, I've continued to develop my front-end web development skills.
-            </p>
-
-            <p>
-            Misc: I enjoy reading, writing, playing the guitar, drawing, working out, cooking, and caring for my succulents when I'm not coding.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-      </div><!--container-->
-  </div><!--section about-->
-
-
-  <div class='section-timeline'>
-
-  </div> <!--section timeline-->
-
-  <div class='section-contact'>
-      <div class='row'>
-        <div class='col-lg-12 col-md-12 col-sm-12 block-center'>
-          <section id='contact' data-type='background' data-speed='10' class='pages'>
-            <article>
-              <h1>Contact</h1>
-              <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Github<br/>
-                <a href='http://github.com/ifearcompilererrors'><img src='static/img/Octocat.png' style='max-height:3.7em;'></a>
-              </div>
-              <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>LinkedIn<br/>
-                <a href='https://www.linkedin.com/in/angeliquedecastro'><img src='static/img/linkedini.png'></a>
-              </div>
-              <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Gmail/G+<br/>
-                <a href='https://plus.google.com/117674201585804990479/about'><img src='static/img/gmaili.png'></a>
-              </div>
-              <div class='col-lg-3 col-md-3 col-sm-6 col-xs-6 social lead'>Hacks<br/>
-                <a href='http://challengepost.com/users/angeliquedecastro?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav'><img src='static/img/challengepost.png' class='challengepost'></a>
-              </div>
-            </article>
-          </section>
-        </div>
-      </div>
-
-  </div> <!--section contact-->
-
-  <hr/>
-
-  <div class='row'>
-    <div class='col-lg-12 col-md-12 col-sm-12 text-center'>
-    <p class='bg-info' style="font-size:5em;">More coming soon...</p>
-    </div>
-  </div>
-
-
-  <div class='section-footer'>
-    <div class='container'>
-      <div class='col-lg-3 col-md-3 col'>
-      </div>
-      <div class='col-lg-6 col-md-6 col-sm-12 text-center' align='center' style='margin:auto;'>
-        <br/><br/>
-        &copy;2015 made by Angelique De Castro inspired by <a href='http://themeforest.net/user/metrothemes/portfolio'>metrothemes</a> with help from <a href='http://codrops.com'>codrops</a> and <a href='http://tutsplus.com/'>tuts+</a>
-      </div>
-      <div class='col-lg-3 col-md-3'>
-      </div>
-    </div>
-  </div><!--section footer-->
-
-
-
-<script type='text/javascript'></script>
-
+        </td>
+        <td>
+          <a href="//codepen.io/ifearcompilererrors" target="_blank" title="GitHub">codepen
+          </a>
+        </td>
+        <td>
+          <a href="//glitch.com/@ifearcompilererrors" target="_blank" title="GitHub">glitch
+          </a>
+        </td>
+        <td>
+          <a href="//github.com/ifearcompilererrors" target="_blank" title="GitHub">github
+          </a>
+        </td>
+        <td>
+          <a href="//linkedin.com/in/angeliquedecastro" target="_blank" title="GitHub">linkedin
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
+
+</html>

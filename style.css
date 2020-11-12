@@ -1,0 +1,127 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background: #222;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+section {
+  display: none;
+}
+
+a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.glitch {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+    
+  text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, .75),
+    -0.025em 0 0 rgba(0, 255, 0, .75),
+    -0.05em 0 0 rgba(0, 0, 255, .75);
+  
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 1000ms infinite;
+  clip-path: polygon(0 0, 100% 0, 80% 45%, 0 45%);
+  transform: translate(-0.025em, -0.015em);
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 70%);
+  transform: translate(0.012em, 0.015em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, .75),
+    -0.025em 0 0 rgba(0, 255, 0, .75),
+    -0.05em 0 0 rgba(0, 0, 255, .75);
+  }
+  10% {
+    text-shadow:
+    0.035em 0 0 rgba(255, 0, 0, .75),
+    0.025em 0 0 rgba(0, 255, 0, .75),
+    0.05em 0 0 rgba(0, 0, 255, .75);
+  }
+  19% {
+    text-shadow:
+    0.035em 0 0 rgba(255, 0, 0, .75),
+    0.025em 0 0 rgba(0, 255, 0, .75),
+    0.05em 0 0 rgba(0, 0, 255, .75);
+  }
+  20% {
+    text-shadow:
+    -0.025em 0 0 rgba(255, 0, 0, .75),
+    0.015em 0 0 rgba(0, 255, 0, .75),
+    0.035em 0 0 rgba(0, 0, 255, .75);
+  }
+  77% {
+    text-shadow:
+    -0.025em 0 0 rgba(255, 0, 0, .75),
+    0.015em 0 0 rgba(0, 255, 0, .75),
+    0.035em 0 0 rgba(0, 0, 255, .75);
+  }
+  78% {
+    text-shadow:
+    -0.035em 0 0 rgba(255, 0, 0, .75),
+    0.035em 0 0 rgba(0, 255, 0, .75),
+    -0.06em 0 0 rgba(0, 0, 255, .75);
+  }
+  89% {
+    text-shadow:
+    -0.035em 0 0 rgba(255, 0, 0, .75),
+    0.035em 0 0 rgba(0, 255, 0, .75),
+    -0.06em 0 0 rgba(0, 0, 255, .75);
+  }
+  90% {
+    text-shadow:
+    -0.015em 0 0 rgba(255, 0, 0, .75),
+    -0.025em 0 0 rgba(0, 255, 0, .75),
+    -0.05em 0 0 rgba(0, 0, 255, .75);
+  }
+  99% {
+    text-shadow:
+    -0.015em 0 0 rgba(255, 0, 0, .75),
+    -0.025em 0 0 rgba(0, 255, 0, .75),
+    -0.05em 0 0 rgba(0, 0, 255, .75);
+  }
+  100% {
+    text-shadow:
+    0.05em 0 0 rgba(255, 0, 0, .75),
+    -0.025em 0 0 rgba(0, 255, 0, .75),
+    0.035em 0 0 rgba(0, 0, 255, .75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
