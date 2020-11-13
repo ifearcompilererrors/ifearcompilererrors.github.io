@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://g1.nyt.com/fonts/css/web-fonts.5810def60210a2fa7d0848f37e3fa048bb6147b1.css" rel="stylesheet"
+    type="text/css" />
 
   <title>Angelique De Castro | Hello World</title>
 
@@ -12,26 +14,28 @@
 </head>
 
 <body>
-  <section>
-    <h1>
-      Angelique De Castro
-    </h1>
-    <p>
-      Welcome. I'm an artistic technologist exploring the intersections and
-      impact of code and culture. I work as a front-end developer at The New York
-      Times where I work on reader and editorial facing products that help
-      readers dive deep and understand the news.
+  <div class="content">
+    <section>
+      <h1>
+        Angelique De Castro
+      </h1>
+      <p>
+        Welcome. I'm an artistic technologist exploring the intersections and
+        impact of code and culture. I work as a developer at The New York
+        Times where I engineer reader and editorial facing products that help
+        readers dive deep and understand the news.
+      </p>
+      <p>
+        Links to my creative pursuits as an illustrator and experimental
+        animator are found below.
+      </p>
+    </section>
+    <p class="glitch">
+      <span aria-hidden="true">BRB</span>
+      BRB
+      <span aria-hidden="true">BRB</span>
     </p>
-    <p>
-      Links to my creative pursuits as an illustrator and
-      experimental animator are found below.
-    </p>
-  </section>
-  <p class="glitch">
-    <span aria-hidden="true">BRB</span>
-    BRB
-    <span aria-hidden="true">BRB</span>
-  </p>
+  </div>
   <table>
     <tbody>
       <tr>
@@ -40,24 +44,46 @@
           </a>
         </td>
         <td>
-          <a href="//linkedin.com/in/angeliquedecastro" target="_blank" title="GitHub">linkedin
+          <a href="//linkedin.com/in/angeliquedecastro" target="_blank" title="LinkedIn">linkedin
           </a>
         </td>
         <td>
-          <a href="//www.tiktok.com/@neuegratis" target="_blank" title="GitHub">tiktok
+          <a href="//www.tiktok.com/@neuegratis" target="_blank" title="TikTok">tiktok
           </a>
         </td>
         <td>
-          <a href="//glitch.com/@ifearcompilererrors" target="_blank" title="GitHub">glitch
+          <a href="//codepen.io/ifearcompilererrors" target="_blank" title="Codepen">codepen
           </a>
         </td>
         <td>
-          <a href="//codepen.io/ifearcompilererrors" target="_blank" title="GitHub">codepen
+          <a href="//glitch.com/@ifearcompilererrors" target="_blank" title="Glitch">glitch
+          </a>
+        </td>
+        <td>
+          <a href="//www.paperoranges.com/shop/" target="_blank" title="Paper Oranges">buy my zines
+          </a>
+        </td>
+        <td>
+          <a href="//www.instagram.com/neuegratis/" target="_blank" title="Instagram">instagram
           </a>
         </td>
       </tr>
     </tbody>
   </table>
 </body>
+<script>
+  const [section] = document.getElementsByTagName("section");
+  const [glitch] = document.getElementsByClassName("glitch");
+
+  glitch.addEventListener("click", () => {
+    glitch.style.display = "none";
+    section.style.display = "flex";
+  });
+
+  section.addEventListener("click", () => {
+    section.style.display = "none";
+    glitch.style.display = "block";
+  });
+</script>
 
 </html>
