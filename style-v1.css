@@ -54,11 +54,12 @@ a {
 table {
   min-height: 30vh;
   max-height: 30vh;
-  display: flex;
 }
 
 tbody {
   grid-area: footer;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 400px) {
