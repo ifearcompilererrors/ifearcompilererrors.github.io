@@ -11,14 +11,17 @@ body {
   display: grid;
   place-items: center;
   grid-template-areas:
-    'main'
-    'footer';
+    "main"
+    "footer";
 }
 
 .content {
   cursor: pointer;
   grid-area: main;
-  height: 70vh;
+  min-height: 70vh;
+  max-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
 section {
@@ -27,6 +30,7 @@ section {
   max-width: 600px;
   grid-area: main;
   min-height: 70vh;
+  max-height: 70vh;
   flex-direction: column;
   justify-content: center;
 }
@@ -47,9 +51,20 @@ a {
   font-size: 0.8rem;
 }
 
+table {
+  min-height: 30vh;
+  max-height: 30vh;
+  display: flex;
+}
+
 tbody {
   grid-area: footer;
-  height: 30vh;
+}
+
+@media (max-width: 400px) {
+  .glitch {
+    font-size: 5rem;
+  }
 }
 
 .glitch {
@@ -62,6 +77,12 @@ tbody {
     -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.05em 0 0 rgba(0, 0, 255, 0.75);
 
   animation: glitch 500ms infinite;
+}
+
+@media (max-width: 400px) {
+  .glitch {
+    font-size: 5rem;
+  }
 }
 
 .glitch span {
@@ -136,3 +157,4 @@ tbody {
     animation-iteration-count: 1 !important;
   }
 }
+
