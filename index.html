@@ -107,10 +107,12 @@
   <script>
     const [section] = document.getElementsByTagName("section");
     const [glitch] = document.getElementsByClassName("glitch");
+    const [table] = document.getElementsByTagName("table");
 
     glitch.addEventListener("click", () => {
       glitch.style.display = "none";
       section.style.display = "flex";
+      table.style.display = "block";
     });
   </script>
 </html>

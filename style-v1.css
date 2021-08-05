@@ -2,25 +2,21 @@
 
 body {
   background: #000;
-  min-height: 100vh;
-  max-height: 100vh;
   color: #fff;
   font-family: sans-serif;
-  overflow: hidden;
   padding-bottom: 1em;
   display: grid;
   place-items: center;
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
+    "header"
     "main"
     "footer";
+  height: 90vh;
 }
 
 .content {
   grid-area: main;
-  min-height: 70vh;
-  max-height: 70vh;
-  display: flex;
-  align-items: center;
 }
 
 section {
@@ -28,8 +24,6 @@ section {
   margin: 0 1em 0 1em;
   max-width: 600px;
   grid-area: main;
-  min-height: 70vh;
-  max-height: 70vh;
   flex-direction: column;
   justify-content: center;
 }
@@ -46,23 +40,30 @@ section p {
 }
 
 a {
-  color: #000;
-  font-size: 0.8rem;
-  background-color: #f8ea69;
-  text-decoration: none;
-  padding: 1px 2px;
+  text-decoration: underline;
+  text-decoration-color: #f8ea69;
+  text-decoration-thickness: 3px;
+  font-weight: 700;
   font-family: nyt-imperial;
+  color: #fff;
 }
 
 table {
-  min-height: 30vh;
-  max-height: 30vh;
+  display: none;
+  padding: 1em;
+  grid-area: footer;
 }
 
 tbody {
-  grid-area: footer;
   display: flex;
   align-items: center;
+  margin-bottom: 2em;
+}
+
+td {
+  padding: 0px 5px;
+  display: inline-block;
+  line-height: 1.8rem;
 }
 
 @media (max-width: 400px) {
@@ -72,6 +73,7 @@ tbody {
 }
 
 .glitch {
+  max-height: 100vh;
   font-size: 10rem;
   font-weight: 700;
   text-transform: uppercase;
