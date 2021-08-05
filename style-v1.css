@@ -16,7 +16,6 @@ body {
 }
 
 .content {
-  cursor: pointer;
   grid-area: main;
   min-height: 70vh;
   max-height: 70vh;
@@ -47,8 +46,12 @@ section p {
 }
 
 a {
-  color: #fff;
+  color: #000;
   font-size: 0.8rem;
+  background-color: #f8ea69;
+  text-decoration: none;
+  padding: 1px 2px;
+  font-family: nyt-imperial;
 }
 
 table {
@@ -73,6 +76,7 @@ tbody {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+  cursor: pointer;
 
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.05em 0 0 rgba(0, 0, 255, 0.75);

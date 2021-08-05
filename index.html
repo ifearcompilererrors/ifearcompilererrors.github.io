@@ -12,7 +12,7 @@
 
     <title>Angelique De Castro</title>
 
-    <link rel="stylesheet" href="/style-v1.css" />
+    <link rel="stylesheet" href="style-v1.css" />
   </head>
   <body>
     <div class="content">
@@ -24,7 +24,7 @@
           Welcome. I'm a visual artistic technologist crafting stories and experiences that center marginalized narratives. My art practice is focused on co-creating art that positions recontextualized history as an avenue for possible futures that inspire, educate, and galvanize. I am also a Software Engineer at The New York Times engineering reader and editorial-facing news products.
         </p>
         <p>
-          I am also an alumn of the virtual artist-in-residence program at the <a href="https://www.aaartsalliance.org/stories/a4-announces" target="__blank" rel="noreferrer">Asian American Art Alliance</a>. Links to my creative pursuits as an illustrator and experimental animator are below.
+          I am also an alumn of the virtual artist-in-residence program at the <a href="https://www.aaartsalliance.org/stories/a4-announces" target="__blank" rel="noreferrer" title="A4">Asian American Art Alliance</a>. This <a href="http://maketikoy.net" target="_blank" title="Tikoy Recipe">recipe</a> was kind of written up in <a href="https://www.nytimes.com/2021/02/12/nyregion/indoor-dining-nyc.html#link-2f0c7f2" title="NYT Article" target="__blank" rel="noreferrer">The New York Times</a>. I'm a collaborator with <a href="https://www.decolonizedtarot.com/" target="__blank" rel="noreferrer" title="Decolonized Tarot">Decolonized Tarot</a> and have worked with a <a href="https://miggymigiwa.net/old-hr-store-en" target="__blank" rel="noreferrer" title="Miggy Migiwa">jazz composer</a> to bring her work to life on stage. More links to my creative pursuits as a technologist, illustrator, and experimental 3D animator are below.
         </p>
       </section>
       <p class="glitch">
@@ -108,14 +108,9 @@
     const [section] = document.getElementsByTagName("section");
     const [glitch] = document.getElementsByClassName("glitch");
 
-    glitch.addEventListener("mouseover", () => {
+    glitch.addEventListener("click", () => {
       glitch.style.display = "none";
       section.style.display = "flex";
-    });
-
-    section.addEventListener("click", () => {
-      section.style.display = "none";
-      glitch.style.display = "block";
     });
   </script>
 </html>
