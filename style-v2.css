@@ -3,7 +3,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: sans-serif;
+  font-family: nyt-imperial;
   padding-bottom: 1em;
   display: grid;
   place-items: center;
@@ -14,7 +14,72 @@ body {
     "footer";
 }
 
-section {
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  grid-area: header;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.nav--link {
+  padding: 0 0 .1em 0;
+  border: 0;
+  color: #fff;
+  margin-left: 0.5em;
+}
+
+.nav--link.active {
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+}
+
+.portfolio {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.portfolio--spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio--spotlight-media {
+  width: 70%;
+}
+
+.portfolio--selectedProjects {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio--projectItem {
+  width: 20%;
+  padding: .25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio--projectItem-media {
+  width: 100%;
+}
+
+.about {
   margin: 0 1em 0 1em;
   max-width: 600px;
   grid-area: main;
@@ -24,6 +89,15 @@ h1 {
   font-family: nyt-cheltenham;
   font-style: italic;
   font-size: 2.5rem;
+}
+
+h2 {
+  padding: 0;
+}
+
+h3 {
+  padding: 0;
+  margin-bottom: 0;
 }
 
 section p {
@@ -57,56 +131,18 @@ td {
   line-height: 1.8rem;
 }
 
-@media (max-width: 400px) {
-  .glitch {
-    font-size: 5rem;
-  }
-}
-
-.glitch-container {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  position: fixed;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  top: 0;
-}
-
-.btn-enter {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  color: #fff;
-}
-
 .glitch {
-  font-size: 10rem;
+  font-size: 2.75rem;
   font-weight: 700;
-  text-transform: uppercase;
   position: relative;
   cursor: pointer;
 
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.05em 0 0 rgba(0, 0, 255, 0.75);
+}
 
+.glitch:hover {
   animation: glitch 500ms infinite;
-}
-
-@media (max-width: 400px) {
-  .glitch {
-    font-size: 5rem;
-  }
-}
-
-.glitch span {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .glitch span:first-child {
