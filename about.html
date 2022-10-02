@@ -84,35 +84,4 @@
       </tbody>
     </table>
   </body>
-  <script>
-    const SECTIONS = {
-      portfolio: 'portfolio',
-      about: 'about',
-    };
-
-    function hideSections({ except = 'portfolio' }) {
-      for (const key in SECTIONS) {
-        if (SECTIONS[key] !== except) {
-          document.getElementById(SECTIONS[key]).style.display = 'none';
-        }
-      }
-    }
-
-    function removeActiveClass({ except = 'portfolio' }) {
-      Array.from(document.getElementsByClassName('nav--button'))
-        .forEach(el => {
-        console.log(el)
-        el.classList.remove('active');
-      });
-
-      document.getElementsByClassName(`${except}--button`)[0].classList.toggle('active');
-    }
-
-    function showSection(sectionName) {
-      document.getElementById(sectionName).style.display = 'block';
-      location.href = `http://angeliquedecastro.com/${sectionName}`;
-      hideSections({ except: sectionName });
-      removeActiveClass({ except: sectionName });
-    }
-  </script>
 </html>
