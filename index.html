@@ -21,7 +21,7 @@
     </section>
     <section id="portfolio" class="portfolio main">
       <div class="portfolio--spotlight">
-        <video controls class="portfolio--spotlight-media">
+        <video autoplay muted loop controls class="portfolio--spotlight-media">
           <source src="https://github.com/ifearcompilererrors/ifearcompilererrors.github.io/raw/master/media/DEGENTRIFIED-bus-scene0001-0360.mp4" type="video/mp4">
         </video>
         <h2>Degentrified Futures</h2>
@@ -203,33 +203,9 @@
     </table>
   </body>
   <script>
-    const SECTIONS = {
-      portfolio: 'portfolio',
-      about: 'about',
-    };
-
-    function hideSections({ except = 'portfolio' }) {
-      for (const key in SECTIONS) {
-        if (SECTIONS[key] !== except) {
-          document.getElementById(SECTIONS[key]).style.display = 'none';
-        }
-      }
-    }
-
-    function removeActiveClass({ except = 'portfolio' }) {
-      Array.from(document.getElementsByClassName('nav--link'))
-        .forEach(el => {
-        console.log(el)
-        el.classList.remove('active');
-      });
-
-      document.getElementsByClassName(`${except}--button`)[0].classList.toggle('active');
-    }
-
-    function showSection(sectionName) {
-      document.getElementById(sectionName).style.display = 'block';
-      hideSections({ except: sectionName });
-      removeActiveClass({ except: sectionName });
+    const motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
+    if (motionQuery.matches) {
+      Array.from(document.getElementsByTagName('video')).forEach(video => video.pause());
     }
   </script>
 </html>
