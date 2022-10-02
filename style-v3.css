@@ -59,6 +59,12 @@ body {
   width: 70%;
 }
 
+@media screen and (max-width: 600px) {
+  .portfolio--spotlight-media {
+    width: 90%;
+  }
+}
+
 .portfolio--selectedProjects {
   max-width: 100%;
   display: flex;
@@ -73,6 +79,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio--projectItem {
+    width: 45%;
+  }
 }
 
 .portfolio--projectItem-media {
@@ -93,6 +105,7 @@ h1 {
 
 h2 {
   padding: 0;
+  margin-bottom: 0;
 }
 
 h3 {
