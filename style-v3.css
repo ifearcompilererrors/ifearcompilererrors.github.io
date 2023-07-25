@@ -21,6 +21,7 @@ body {
   grid-area: header;
   width: 100%;
   margin-top: 3em;
+  flex-wrap: wrap;
 }
 
 .nav--link {
@@ -53,6 +54,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .portfolio--spotlight-media {
@@ -63,6 +65,11 @@ body {
   .portfolio--spotlight-media {
     width: 90%;
   }
+}
+
+.portfolio--spotlight-image {
+  width: 30%;
+  padding-top: 1em;
 }
 
 .portfolio--selectedProjects {
@@ -77,6 +84,14 @@ body {
   margin-top: 2rem;
 }
 
+.portfolio--projectItems-images {
+  width: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+}
+
 .portfolio--projectItem {
   width: 20%;
   padding: .25em;
@@ -89,6 +104,14 @@ body {
   .portfolio--projectItem {
     width: 45%;
   }
+}
+
+.portfolio--projectItem-image {
+  width: 30%;
+}
+
+.portfolio--projectItem-image:not(:last-child) {
+  margin-right: 1em;
 }
 
 .portfolio--projectItem-media {
