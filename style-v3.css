@@ -264,3 +264,12 @@ td {
     animation-iteration-count: 1 !important;
   }
 }
+
+li {
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+li::before {
+  content: '✨ ';
+}
