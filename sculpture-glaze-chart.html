@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&amp;subset=latin,latin-ext"
+        media="all">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      font-family: Inter, sans-serif;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: row;
+    }
+
+    td {
+      display: grid;
+      grid: 
+        "index"
+        "glaze";
+      grid-template-rows: 25% 75%;
+      grid-template-columns: 100%;
+      width: 130px;
+      height: 80px;
+      padding: 4px;
+    }
+
+    .index {
+      grid-area: "index";
+    }
+
+    .glaze {
+      grid-area: "glaze";
+    }
+  </style>
+</head>
+
+<body>
+  <table id="glaze-table"></table>
+</body>
+
+<script>
+  const glazes = [
+    'Faux Majolica',
+    'Seabreeze Blue',
+    'Seafoam Green',
+    'Robin Egg',
+    'Gloss Black + Electric Shino',
+    'Opaque Teal',
+    'Weathered Bronze',
+    'Marshmallow',
+    'Olive Green',
+    'Frosted Cherry',
+    'Gloss Black',
+    'Gloss Black + Seafoam Green',
+    'AMACO: Blue Midnight',
+    'Amber Temoku',
+    'Snow White',
+    'Electric Shino',
+    'Selsor Chun',
+    'Fog',
+    'Copper Matte',
+    'Cork',
+    'Crystal Clouds',
+    'Peggy Blue',
+    'Kemp Purple',
+    'Slime Green',
+    'Yellow Crackle',
+    'Crater',
+    'Nes Gray',
+    'Snow Flake',
+    'Metallic Black',
+    'SPECTRUM: Mirror'
+  ];
+
+  const tableInnerHtml = glazes.reduce((innerHtml, name, index) => {
+    if ((index+1) % 5 === 1) innerHtml += `<tr>`; // start new row
+    
+    innerHtml += `<td><span class="index">${index}</span><span class="glaze">${name}</span></td>`
+    
+    if ((index+1) % 5 === 0) innerHtml += `</tr>`; // end row
+
+    return innerHtml;
+  }, '');
+
+  document.getElementById("glaze-table").innerHTML = tableInnerHtml;
+</script>
+</html>
