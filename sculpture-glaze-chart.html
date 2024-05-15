@@ -87,7 +87,7 @@
   const tableInnerHtml = glazes.reduce((innerHtml, name, index) => {
     if ((index+1) % 5 === 1) innerHtml += `<tr>`; // start new row
     
-    innerHtml += `<td><span class="index">${index}</span><span class="glaze">${name}</span></td>`
+    innerHtml += `<td><span class="index">${index+1}</span><span class="glaze">${name}</span></td>`
     
     if ((index+1) % 5 === 0) innerHtml += `</tr>`; // end row
 
