@@ -23,6 +23,7 @@ body {
   width: 100%;
   margin-top: 3em;
   flex-wrap: wrap;
+  font-size: 1rem;
 }
 
 .nav--link {
@@ -99,12 +100,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-  .portfolio--projectItem {
-    width: 45%;
-  }
 }
 
 .portfolio--projectItem-image {
@@ -186,7 +181,7 @@ td {
 }
 
 .glitch {
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   font-weight: 700;
   position: relative;
   cursor: pointer;
