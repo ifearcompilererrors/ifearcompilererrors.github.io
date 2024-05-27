@@ -185,6 +185,7 @@ td {
   font-weight: 700;
   position: relative;
   cursor: pointer;
+  color: #000;
 
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.05em 0 0 rgba(0, 0, 255, 0.75);
@@ -268,4 +269,43 @@ li {
 
 li::before {
   content: '✨ ';
+}
+
+#shop {
+  background: #fff;
+}
+
+.shop {
+  margin: 0 1em 0 1em;
+  grid-area: main;
+  max-width: 1000px;
+}
+
+.shop_section__links {
+  color: #000;
+}
+
+#shop a {
+  color: black !important;
+}
+
+.mugs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mugs img {
+  max-width: 300px;
+  max-height: 500px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .mugs img {
+    width: 200px;
+    max-height: 400px;
+  }
 }
