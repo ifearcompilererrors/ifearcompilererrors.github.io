@@ -49,17 +49,49 @@
     </section>
     <section class="shop main">
       <h1>🛍️ Shop ☕️</h1>
+      <h3><a href="https://instagram.com/zaddy.gif">DM</a> or <a href="mailto:ang.viewpoint103@passinbox.com">email</a> to
+        claim.</h3>
       <div class="mugs">
-        <img src="media/shop/mugs/topo green lg.png" data="$40" class="shop_item sold" />
-        <img src="media/shop/mugs/brown.png" data="$40" class="shop_item sold" />
-        <img src="media/shop/mugs/topo bw.png" data="$35" class="shop_item sold" />
-        <img src="media/shop/mugs/black.png" data="$35" class="shop_item sold" />
-        <img src="media/shop/mugs/swirl black.png" data="$40" class="shop_item sold" />
-        <img src="media/shop/mugs/swirl blue.png" data="$40" class="shop_item sold" />
-        <img src="media/shop/mugs/mold.png" data="$45" class="shop_item sold" />
-        <img src="media/shop/mugs/topo green sm.png" data="$15" class="shop_item sold" />
-        <img src="media/shop/mugs/coral.png" data="$45" class="shop_item sold" />
-        <img src="media/shop/mugs/clouds.png" data="$35" class="shop_item sold" />
+        <span class="shop_item sold" data="$40">
+          <h3 class="shop_item__title">topographic green lg</h3>
+          <img src="media/shop/mugs/topo green lg.png" />
+        </span>
+        <span class="shop_item sold" data="$40">
+          <h3 class="shop_item__title">tattooed brown</h3>
+          <img src="media/shop/mugs/brown.png" />
+        </span>
+        <span class="shop_item sold" data="$35">
+          <h3 class="shop_item__title">topographic black & white</h3>
+          <img src="media/shop/mugs/topo bw.png" />
+        </span>
+        <span class="shop_item sold" data="$35">
+          <h3 class="shop_item__title">black</h3>
+          <img src="media/shop/mugs/black.png" />
+        </span>
+        <span class="shop_item sold" data="$40">
+          <h3 class="shop_item__title">swirl black</h3>
+          <img src="media/shop/mugs/swirl black.png" />
+        </span>
+        <span class="shop_item sold" data="$40">
+          <h3 class="shop_item__title">swirl blue</h3>
+          <img src="media/shop/mugs/swirl blue.png" />
+        </span>
+        <span class="shop_item sold" data="$45">
+          <h3 class="shop_item__title">mold</h3>
+          <img src="media/shop/mugs/mold.png" />
+        </span>
+        <span class="shop_item sold" data="$20">
+          <h3 class="shop_item__title">topographic green sm</h3>
+          <img src="media/shop/mugs/topo green sm.png" />
+        </span>
+        <span class="shop_item sold" data="$45">
+          <h3 class="shop_item__title">coral</h3>
+          <img src="media/shop/mugs/coral.png" />
+        </span>
+        <span class="shop_item" data="$35">
+          <h3 class="shop_item__title">clouds</h3>
+          <img src="media/shop/mugs/clouds.png" />
+        </span>
       </div>
     </section>
     <table class="shop_section__links">
@@ -110,7 +142,6 @@
     const shopItems = document.getElementsByClassName("shop_item");
     Array.from(shopItems).forEach(item => item.addEventListener("mouseenter", (event) => {
       item.style.cursor = cursorStyle(item.attributes.data.value);
-      // if (item.attributes.class.value.includes('sold'))
     }))
   </script>
 </html>
