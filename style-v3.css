@@ -289,23 +289,39 @@ li::before {
   color: black !important;
 }
 
+#shop h1 {
+  color: #000;
+  text-align: center;
+}
+
 .mugs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .mugs img {
-  max-width: 300px;
-  max-height: 500px;
   margin-right: 25px;
   margin-bottom: 10px;
+  height: 100%;
+  max-width: 300px;
+  /* cursor: url(media/shop/mugs/bubble.svg) 0 100, cell; */
+}
+
+.mugs img:hover {
+  transform: rotate(30deg);
 }
 
 @media screen and (max-width: 600px) {
   .mugs img {
-    width: 200px;
-    max-height: 400px;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
   }
+}
+
+.sold:hover {
+  opacity: 0.5;
 }
