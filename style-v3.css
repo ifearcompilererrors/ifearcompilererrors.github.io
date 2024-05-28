@@ -185,7 +185,7 @@ td {
   font-weight: 700;
   position: relative;
   cursor: pointer;
-  color: #000;
+  color: #fff;
 
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
     -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.05em 0 0 rgba(0, 0, 255, 0.75);
@@ -275,6 +275,9 @@ li::before {
   background: #fff;
 }
 
+#shop .glitch {
+  color: #000;
+}
 .shop {
   margin: 0 1em 0 1em;
   grid-area: main;
