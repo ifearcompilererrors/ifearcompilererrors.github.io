@@ -271,6 +271,95 @@ li::before {
   content: '✨ ';
 }
 
+@keyframes loadingIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(36deg);
+  }
+
+  20% {
+    transform: rotate(72deg);
+  }
+
+  30% {
+    transform: rotate(108deg);
+  }
+
+  40% {
+    transform: rotate(144deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  60% {
+    transform: rotate(216deg);
+  }
+
+  70% {
+    transform: rotate(253deg);
+  }
+
+  80% {
+    transform: rotate(289deg);
+  }
+
+  90% {
+    transform: rotate(325deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCopy {
+  0% {
+    content: 'loading';
+  }
+
+  25% {
+    content: 'loading.';
+  }
+
+  50% {
+    content: 'loading..';
+  }
+
+  75% {
+    content: 'loading...';
+  }
+
+  100% {
+    content: 'loading....';
+  }
+}
+
+#loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+  height: 90vh;
+  color: #000;
+}
+
+.loading_icon {
+  font-size: 100px;
+  animation: loadingIcon 650ms infinite;
+}
+
+.loading_copy::after {
+  content: 'loading';
+  font-size: 30px;
+  animation: loadingCopy 2000ms infinite;
+}
+
 #shop {
   background: #fff;
 }
