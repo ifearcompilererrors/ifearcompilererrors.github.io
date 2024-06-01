@@ -451,3 +451,24 @@ li::before {
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+  .sold::after {
+    content: ' ';
+  }
+
+  .sold::before {
+    content: 'Sold Out';
+    position: absolute;
+    background: #a1f49f;
+    color: #000;
+    transform: translate(160%, 500%);
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    z-index: 1;
+    opacity: 1;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
