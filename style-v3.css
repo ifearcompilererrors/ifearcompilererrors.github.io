@@ -462,7 +462,7 @@ li::before {
     position: absolute;
     background: #a1f49f;
     color: #000;
-    transform: translate(160%, 500%);
+    transform: translate(160%, 800%);
     padding: 5px 10px;
     border-radius: 25px;
     font-size: 1.5rem;
@@ -470,5 +470,17 @@ li::before {
     opacity: 1;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+.shop_item__info {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .shop_item__info {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(20px);
   }
 }
