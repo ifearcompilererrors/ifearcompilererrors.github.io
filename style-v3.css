@@ -436,8 +436,6 @@ li::before {
 }
 @media screen and (max-width: 600px) {
   .mugs img {
-    max-width: 90%;
-    max-height: 90%;
     margin-bottom: 30px;
   }
 }
@@ -447,3 +445,13 @@ li::before {
   justify-content: flex-end;
   transform: translateY(20px);
 }
+/* 
+.shop_modal {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 10px solid #a1f49f;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  margin: 2em;
+} */
