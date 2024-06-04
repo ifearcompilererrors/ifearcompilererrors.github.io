@@ -41,6 +41,10 @@ body {
   grid-area: main;
 }
 
+.archive_link {
+  margin-right: 10px;
+}
+
 .portfolio {
   padding-top: 2em;
   display: flex;
@@ -408,12 +412,12 @@ li::before {
 
 .shop_item__img:hover {
   transform: rotate(30deg);
-  cursor: url(grab.cur), grab;
+  cursor: grab;
 }
 
 .shop_item__img:active {
   transform: rotate(30deg);
-  cursor: url(grabbing.cur) 100 100, grabbing;
+  cursor: grabbing;
 }
 
 .sold img {
@@ -445,13 +449,21 @@ li::before {
   justify-content: flex-end;
   transform: translateY(20px);
 }
-/* 
-.shop_modal {
+
+#shopModalContainer {
   display: none;
-  position: absolute;
+  position: fixed;
+  /* background: blur(); */
+}
+
+.shop_modal {
   background: #fff;
+  margin: 1em;
   border: 10px solid #a1f49f;
   border-radius: 10px;
   box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
-  margin: 2em;
-} */
+  z-index: 99999;
+  height: 100vh;
+  width: 100vw;
+  color: #000;
+}
