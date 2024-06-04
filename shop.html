@@ -65,61 +65,145 @@
       <span class="loading_icon"></span>
       <p class="loading_copy"></p>
     </div>
+    <div id="shopModalContainer" class="shop_modal__background">
+      <div id="shopModal" class="shop_modal">
+        <span class="shop_modal__close">x</span>
+        <div id="shopModalContent" class="shop_modal__content"></div>
+      </div>
+    </div>
     <section class="shop main" style="display: none;">
-      <!-- <div class="shop_modal"></div> -->
       <h1>🛍️ Shop ☕️</h1>
       <h3><a href="https://instagram.com/zaddy.gif">DM</a> or <a href="mailto:ang.viewpoint103@passinbox.com">email</a> to
         claim.</h3>
       <div class="mugs">
+        <span class="shop_item"
+              data="$40">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">cloudy #2</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/cloudy-2.png"
+               class="shop_item__img"
+               onclick="handleShopItemClick()" />
+        </span>
+        <span class="shop_item"
+              data="$40">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">chipped electric</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/chipped electric.png"
+               class="shop_item__img"
+               onclick="handleShopItemClick()" />
+        </span>
+        <span class="shop_item"
+              data="$40"
+              onmouseenter="handleShopItemSecondary('coral2Primary', 'coral2Secondary')"
+              onmouseleave="handleShopItemSecondary('coral2Secondary', 'coral2Primary')"
+        >
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">coral #2</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/coral-2-back.png"
+               class="shop_item__img"
+               id="coral2Primary"
+               onclick="handleShopItemClick()"/>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/coral-2.png"
+               id="coral2Secondary"
+               class="shop_item__img shop_item__img_secondary"/>
+        </span>
+        <span class="shop_item sold"
+              data="sold">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">electric</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/electric.png"
+               class="shop_item__img"
+               onclick="handleShopItemClick()" />
+        </span>
         <span class="shop_item" data="$35">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">clouds</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/clouds.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/clouds.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">topographic green lg</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo green lg.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo green lg.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()" 
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">tattooed brown</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/brown.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/brown.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">topographic black & white</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo bw.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo bw.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">black</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/black.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/black.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">swirl black</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/swirl black.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/swirl black.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">swirl blue</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/swirl blue.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/swirl blue.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">mold</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/mold.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/mold.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">topographic green sm</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo green sm.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/topo green sm.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()" 
+          />
         </span>
         <span class="shop_item sold" data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">coral</h3>
-          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/coral.png" class="shop_item__img" />
+          <img
+            src="https://ik.imagekit.io/rgmxidiid/tr:w-0.6/coral.png"
+            class="shop_item__img"
+            onclick="handleShopItemClick()"
+          />
         </span>
       </div>
     </section>
@@ -168,7 +252,26 @@
   </body>
   <script>
     const getNode = (className) => Array.from(document.getElementsByClassName(className))[0];
-    
+  
+    // TODO
+    const handleShopItemClick = () => {
+      return;
+      const modalContainer = document.getElementById('shopModalContainer');
+      const modal = document.getElementById('shopModal');
+      const modalContent = document.getElementById('shopModalContent');
+      modalContainer.style.display = 'block';
+      modalContent.innerHTML = 'hi';
+    };
+
+    const handleShopItemSecondary = (primaryId, secondaryId) => {
+      const primary = document.getElementById(primaryId);
+      const secondary = document.getElementById(secondaryId);
+      if (!primary || !secondary) return;
+
+      primary.style.display = 'none';
+      secondary.style.display = 'block';
+    }
+
     const loadingIcon = getNode('loading_icon');
     const icons = ['🌀', '🌴', '🤓', '🙀', '⚙️', '🔆', '🇵🇭', '🍉', '🐻', '🐡', '🌚', '🌞', '🌝', '⭐️', '🍕', '⚽️', '📀'];
     loadingIcon.innerHTML = icons[Math.floor(Math.random() * icons.length)];
@@ -192,6 +295,7 @@
 
     const info = document.getElementsByClassName('shop_item__info');
     Array.from(info).forEach(item => {
+      // Add info text to info bubble
       if (item.parentNode.attributes.data.value)
         item.innerHTML = bubbleSvg(item.parentNode.attributes.data.value);
     })

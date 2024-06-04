@@ -366,11 +366,13 @@ li::before {
 
 #shop {
   background: #fff;
+  --green: #a1f49f;
 }
 
 #shop .glitch {
   color: #000;
 }
+
 .shop {
   margin: 0 1em 0 1em;
   grid-area: main;
@@ -406,7 +408,7 @@ li::before {
 .shop_item__img {
   margin-right: 25px;
   margin-bottom: 10px;
-  height: 100%;
+  max-height: 100%;
   max-width: 300px;
 }
 
@@ -450,20 +452,43 @@ li::before {
   transform: translateY(20px);
 }
 
+.shop_item__img_secondary {
+  display: none;
+}
+
 #shopModalContainer {
   display: none;
   position: fixed;
   /* background: blur(); */
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  margin: 1em;
+  font-family: nyt-imperial;
 }
 
 .shop_modal {
+  display: grid;
   background: #fff;
   margin: 1em;
-  border: 10px solid #a1f49f;
+  border: 10px solid var(--green);
   border-radius: 10px;
   box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
-  z-index: 99999;
-  height: 100vh;
-  width: 100vw;
   color: #000;
+  height: 90%;
+  padding: 1em;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.shop_modal__close {
+  font-weight: 700;
+  color: #000;
+  border-radius: 10px;
+  border: 2px solid var(--green);
+  font-size: 18px;
+  grid-area: header;
 }
