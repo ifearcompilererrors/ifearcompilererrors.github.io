@@ -376,7 +376,7 @@ li::before {
 .shop {
   margin: 0 1em 0 1em;
   grid-area: main;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .shop_section__links {
@@ -403,6 +403,18 @@ li::before {
   justify-content: center;
   align-items: center;
   margin-top: 1em;
+}
+
+.shop_item {
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .shop_item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .shop_item__img {
