@@ -76,6 +76,21 @@
         claim.</h3>
       <div class="mugs">
         <span class="shop_item"
+              data="$45"
+              onmouseenter="handleShopItemSecondary('blueParty', 'bluePartyBack')"
+              onmouseleave="handleShopItemSecondary('bluePartyBack', 'blueParty')">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">blue zag</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/blue party.png"
+               class="shop_item__img"
+               id="blueParty"
+               onclick="handleShopItemClick()" />
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/blue party back.png"
+               class="shop_item__img shop_item__img_secondary"
+               id="bluePartyBack"
+               onclick="handleShopItemClick()" />
+        </span>
+        <span class="shop_item"
               data="$45">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">seafoam</h3>
@@ -83,8 +98,8 @@
                class="shop_item__img"
                onclick="handleShopItemClick()" />
         </span>
-        <span class="shop_item"
-              data="$45">
+        <span class="shop_item sold"
+              data="sold">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">hulk smash</h3>
           <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/hulk-smash.png"
@@ -116,6 +131,14 @@
                onclick="handleShopItemClick()" />
         </span>
         <span class="shop_item"
+              data="$45">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">code red</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/code red.png"
+               class="shop_item__img"
+               onclick="handleShopItemClick()" />
+        </span>
+        <span class="shop_item"
               data="$40">
           <span class="shop_item__info"></span>
           <h3 class="shop_item__title">chipped electric</h3>
@@ -125,6 +148,21 @@
         </span>
         <span class="shop_item"
               data="$45"
+              onmouseenter="handleShopItemSecondary('blueZagBack', 'blueZag')"
+              onmouseleave="handleShopItemSecondary('blueZag', 'blueZagBack')">
+          <span class="shop_item__info"></span>
+          <h3 class="shop_item__title">blue zag</h3>
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/blue zag back.png"
+               class="shop_item__img"
+               id="blueZagBack"
+               onclick="handleShopItemClick()" />
+          <img src="https://ik.imagekit.io/rgmxidiid/tr:w-0.4/blue zag.png"
+               class="shop_item__img shop_item__img_secondary"
+               id="blueZag"
+               onclick="handleShopItemClick()" />
+        </span>
+        <span class="shop_item sold"
+              data="sold"
               onmouseenter="handleShopItemSecondary('coral2Primary', 'coral2Secondary')"
               onmouseleave="handleShopItemSecondary('coral2Secondary', 'coral2Primary')"
         >
