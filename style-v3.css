@@ -85,6 +85,11 @@ body {
   }
 }
 
+.portfolio--spotlight-image--lg {
+  width: 50%;
+  margin-top: 1em;
+}
+
 .portfolio--selectedProjects {
   max-width: 100%;
   display: flex;
