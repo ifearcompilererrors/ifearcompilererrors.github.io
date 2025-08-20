@@ -534,3 +534,15 @@ li::before {
   font-size: 18px;
   grid-area: header;
 }
+
+.preview__header {
+  text-align: center;
+}
+
+.preview__section {
+  margin-bottom: 10em;
+}
+
+.preview__copy {
+  max-width: 900px;
+}
