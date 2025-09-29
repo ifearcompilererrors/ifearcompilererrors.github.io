@@ -90,6 +90,12 @@ body {
   margin-top: 1em;
 }
 
+@media screen and (max-width: 600px) {
+  .portfolio--spotlight-image--lg {
+    width: 100%;
+  }
+}
+
 .portfolio--selectedProjects {
   max-width: 100%;
   display: flex;
