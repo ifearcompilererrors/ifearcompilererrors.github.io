@@ -31,6 +31,7 @@ body {
   border: 0;
   color: #fff;
   margin-left: 0.5em;
+  cursor: pointer;
 }
 
 .nav--link.active {
@@ -551,4 +552,14 @@ li::before {
 
 .preview__copy {
   max-width: 900px;
+}
+
+.mobile_newline {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile_newline {
+    display: block;
+  }
 }
