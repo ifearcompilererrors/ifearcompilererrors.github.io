@@ -61,6 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 1em;
 }
 
 .portfolio--spotlight-media {
@@ -75,19 +76,16 @@ body {
 
 .portfolio--spotlight-image {
   width: 30%;
-  margin-top: 1em;
 }
 
 @media screen and (max-width: 600px) {
   .portfolio--spotlight-image {
     width: 70%;
-    margin-bottom: 1em;
   }
 }
 
 .portfolio--spotlight-image--lg {
   width: 50%;
-  margin-top: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -98,7 +96,6 @@ body {
 
 .portfolio--spotlight-image--md {
   width: 40%;
-  margin-top: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -113,6 +110,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1em;
   margin-top: 1em;
 }
 
@@ -121,8 +119,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1em;
+  padding: 0 1em 0 1em;
   align-items: center;
+  gap: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -148,19 +147,9 @@ body {
 @media screen and (max-width: 600px) {
   .portfolio--projectItem-image {
     width: 70%;
-    margin: 0 0 1em 0;
   }
 }
 
-.portfolio--projectItem-image:not(:last-child) {
-  margin-right: 1em;
-}
-
-@media screen and (max-width: 600px) {
-  .portfolio--projectItem-image:not(:last-child) {
-    margin: 0 0 1em 0;
-  }
-}
 .portfolio--projectItem-media {
   width: 100%;
 }
