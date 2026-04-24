@@ -306,10 +306,8 @@ td {
 li {
   margin-bottom: 1em;
   list-style: none;
-}
-
-li::before {
-  content: '✨ ';
+  list-style-type: '✨';
+  padding-inline-start: 1ch;
 }
 
 @keyframes loadingIcon {
